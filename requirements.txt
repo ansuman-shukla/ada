@@ -3,3 +3,9 @@ fastapi
 uvicorn
 pymongo[srv]
 python-dotenv
+langchain
+langchain-community
+langchain-groq
+pinecone-client
+pinecone-text
+pinecone-text[splade]

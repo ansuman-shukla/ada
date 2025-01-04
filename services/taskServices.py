@@ -7,27 +7,27 @@ def get_all_tasks_from_db():
     return taskModelList(get_all_tasks())
 
 def get_task_by_date_from_db(date: str):
-    return taskModel(get_task_by_date(date))
+    return get_task_by_date(date)
 
 def get_task_by_time_from_db(time: str):
-    return taskModel(get_task_by_time(time))
+    return get_task_by_time(time)
 
 def get_task_by_date_time_from_db(date: str , time: str):
-    return taskModel(get_task_by_date_time(date , time))
+    return get_task_by_date_time(date , time)
 
-def create_task_in_db(task: TaskSchema):
-    task_dict = task_collection.find_one({"date":task.date , "time":task.time} )  # Find task by date and time
-    # print(task_dict)
-    # print(task)
-    print(task)
-    # if task_dict is None:
-        # return taskModel(create_task(task))
+def create_task_in_db(task:dict):
+    task_dict = task_collection.find_one({"date":task['date'] , "time":task['time']} )  # Find task by date and time
     
-    # existing_task_name = task_dict.get("name")  # Get name from existing task
-    # return {"error": f"Task '{existing_task_name}' already exists for {task.date} at {task.time}"}  # Return error message
+    if task_dict is None:
+        task_model = taskModel(create_task(task))
+        return task_model
+        # return TaskSchema(task_model)
+    
+    existing_task_name = task_dict.get("name")  # Get name from existing task
+    return {"error": f"Task '{existing_task_name}' already exists for {task['date']} at {task['time']}"}  # Return error message
 
-def update_task_in_db(task: TaskSchema):
-    return taskModel(update_task(task))
+def update_task_in_db(date:str , time:str ,task: TaskSchema):
+    return (update_task(date , time ,task))
 
 def delete_task_in_db(date: str , time: str):
     return delete_task(date , time)

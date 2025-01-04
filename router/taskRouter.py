@@ -13,25 +13,25 @@ router = APIRouter(
 async def get_all():
     return get_all_tasks_from_db()
 
-@router.get("/{date}" , response_model=TaskSchema , status_code=status.HTTP_200_OK)
+@router.get("/{date}" , status_code=status.HTTP_200_OK)
 async def get_task_by_date(date: str):
     return get_task_by_date_from_db(date)
 
-@router.get("/{time}" , response_model=TaskSchema , status_code=status.HTTP_200_OK)
+@router.get("/{time}" , status_code=status.HTTP_200_OK)
 async def get_task_by_time(time: str):
     return get_task_by_time_from_db(time)
 
-@router.get("/{date}/{time}" , response_model=TaskSchema , status_code=status.HTTP_200_OK)
+@router.get("/{date}/{time}", status_code=status.HTTP_200_OK)
 async def get_task_by_date_time(date: str , time: str):
     return get_task_by_date_time_from_db(date , time)
 
-@router.post("/" , response_model=TaskSchema , status_code=status.HTTP_201_CREATED)
+@router.post("/" , status_code=status.HTTP_201_CREATED)
 async def create_task(task: TaskSchema):
     return create_task_in_db(task)
 
-@router.put("/" , response_model=TaskSchema , status_code=status.HTTP_200_OK)
-async def update_task(task: TaskSchema):
-    return update_task_in_db(task)
+@router.put("/" , status_code=status.HTTP_200_OK)
+async def update_task(date: str , time: str,task: TaskSchema):
+    return update_task_in_db(date ,time, task)
 
 @router.delete("/{date}/{time}" , status_code=status.HTTP_200_OK)
 async def delete_task(date: str , time: str):
