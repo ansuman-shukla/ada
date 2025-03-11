@@ -1,4 +1,4 @@
-from database.pineConeRetriver import retriever
+from database.pineConeRetriver import *
 import logging
 logging.basicConfig(level=logging.INFO)
 

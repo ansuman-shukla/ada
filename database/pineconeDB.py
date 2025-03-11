@@ -39,4 +39,4 @@ sentences = [
     "Apple's first product was the Apple I, a computer designed by Steve Wozniak.",
 ]
 
-bm25encoder.default()
+bm25encoder.fit(sentences)

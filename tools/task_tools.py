@@ -111,9 +111,6 @@ class ToolManager:
         def create_memory(user_input: list[str]):
             """
             Create a memory in the Vector Databse with the user input. Please don't use this tool unless told explicitly.
-            Memory creation structure:
-            Bucket is the catagory , body is the information and  context is the context of the memory.
-            ["(Bucket) , (Body) , (Context) ,(date)"]
 
             Args: user_input: User input to be stored in the memory in form of list[str]
             Returns: Memory created | None
@@ -125,9 +122,6 @@ class ToolManager:
         def search_memory(user_query: str):
             """
             Search a memory in the Vector Database with the user query
-            Bucket is the catagory in which you want to search the memory.body is the information you want to search and context is the context of the memory.
-            search memories user_query structure:- "(Bucket) , (Query) , (Context)"
-            
 
             Args: user_query: User query string to search the memory 
             Returns: Memory searched
