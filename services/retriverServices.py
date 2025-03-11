@@ -2,6 +2,8 @@ from database.pineConeRetriver import retriever
 import logging
 logging.basicConfig(level=logging.INFO)
 
+
+
 def embedder(user_input):
 
     if user_input:
@@ -14,11 +16,5 @@ def embedder(user_input):
 
 def search(user_query):
     results = retriever.invoke(user_query)
-    for result in results:
-        print(result)
-        print()
-
     return results
 
-
-# print(search("whatis my name ?"))
