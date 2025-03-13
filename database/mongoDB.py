@@ -17,3 +17,9 @@ client = MongoClient(uri, server_api=ServerApi('1'))
 db = client['tasks']
 task_collection = db['tasks']
 
+#ping mongoDB
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
