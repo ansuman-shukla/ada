@@ -358,29 +358,29 @@ st.sidebar.markdown("""
 
 <h3>Task Management</h3>
 <ul>
-<li><b>View all tasks</b>: <span style="color: blue">"Show me all my tasks"</span></li>
-<li><b>View tasks by date</b>: <span style="color: blue">"Can you get me all tasks for 15:10:2023?"</span> <i>(date: dd:mm:yyyy)</i></li>
-<li><b>View tasks by time</b>: <span style="color: blue">"What tasks do I have at 14:00:00?"</span> <i>(time: hh:mm:ss, 24-hour)</i></li>
-<li><b>View a specific task</b>: <span style="color: blue">"What's my task on 15:10:2023 at 14:00:00?"</span></li>
-<li><b>Create a task</b>: <span style="color: blue">"Add a task: Name: Go for a walk, Description: Evening stroll, Status: pending, Date: 16:10:2023, Time: 18:00:00, Priority: high"</span></li>
-<li><b>Update a task</b>: <span style="color: blue">"Update my task on 16:10:2023 at 18:00:00 to Time: 19:00:00"</span></li>
-<li><b>Delete a task</b>: <span style="color: blue">"Delete my task on 16:10:2023 at 18:00:00"</span></li>
+<li><b>View all tasks</b>: <span style="color: green">"Show me all my tasks"</span></li>
+<li><b>View tasks by date</b>: <span style="color: green">"Can you get me all tasks for 15:10:2023?"</span> <i>(date: dd:mm:yyyy)</i></li>
+<li><b>View tasks by time</b>: <span style="color: green">"What tasks do I have at 14:00:00?"</span> <i>(time: hh:mm:ss, 24-hour)</i></li>
+<li><b>View a specific task</b>: <span style="color: green">"What's my task on 15:10:2023 at 14:00:00?"</span></li>
+<li><b>Create a task</b>: <span style="color: green">"Add a task: Name: Go for a walk, Description: Evening stroll, Status: pending, Date: 16:10:2023, Time: 18:00:00, Priority: high"</span></li>
+<li><b>Update a task</b>: <span style="color: green">"Update my task on 16:10:2023 at 18:00:00 to Time: 19:00:00"</span></li>
+<li><b>Delete a task</b>: <span style="color: green">"Delete my task on 16:10:2023 at 18:00:00"</span></li>
 </ul>
 
 <h3>Memory Management</h3>
 <ul>
-<li><b>Store information</b>: <span style="color: blue">"Remember that my friend's birthday is on 20:10:2023"</span></li>
-<li><b>Retrieve information</b>: <span style="color: blue">"When is my friend's birthday?"</span></li>
+<li><b>Store information</b>: <span style="color: green">"Remember that my friend's birthday is on 20:10:2023"</span></li>
+<li><b>Retrieve information</b>: <span style="color: green">"When is my friend's birthday?"</span></li>
 </ul>
 
 <h3>Web Search</h3>
 <ul>
-<li><b>Get information</b>: <span style="color: blue">"What's the weather like today?"</span> or <span style="color: blue">"Who won the last World Cup?"</span></li>
+<li><b>Get information</b>: <span style="color: green">"What's the weather like today?"</span> or <span style="color: green">"Who won the last World Cup?"</span></li>
 </ul>
 
 <h3>Important Notes</h3>
 <ul>
-<li>To make Ada remember something forever, explicitly say <span style="color: blue">"Remember that..."</span> or <span style="color: blue">"Store this information..."</span>. She can retrieve it later when you ask!</li>
+<li>To make Ada remember something forever, explicitly say <span style="color: green">"Remember that..."</span> or <span style="color: green">"Store this information..."</span>. She can retrieve it later when you ask!</li>
 <li>For tasks, include all details (name, description, status, date, time, priority) when creating or updating.</li>
 <li>Use date format <code>dd:mm:yyyy</code> (e.g., 15:10:2023) and time format <code>hh:mm:ss</code> (e.g., 14:00:00).</li>
 </ul>
