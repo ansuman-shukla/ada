@@ -108,16 +108,15 @@ class ToolManager:
 
 
         @tool
-        def create_memory(user_input: list[str]):
+        def create_memory(user_input: str):
             """
             Create a memory in the Vector Databse with the user input. Please don't use this tool unless told explicitly.
 
-            Args: user_input: User input to be stored in the memory in form of list[str]
+            Args:User input to be stored in the memory in form of str
             Returns: Memory created | None
             """
             # return "Memory created"
-            return embedder(user_input)
-
+            return str(embedder(user_input))
         @tool
         def search_memory(user_query: str):
             """
@@ -127,7 +126,7 @@ class ToolManager:
             Returns: Memory searched
             """
             # return "No memory found"
-            return search(user_query)
+            return str(search(user_query))
         
         @tool
         def serper_search( query: str):
@@ -136,7 +135,7 @@ class ToolManager:
 
             llm = ChatGoogleGenerativeAI(
                 model="gemini-2.0-flash-exp",
-                temperature=0.7,
+                temperature=0.2,
                 api_key=os.getenv("GEMINI_API_KEY")
                 )
             search = GoogleSerperAPIWrapper()
