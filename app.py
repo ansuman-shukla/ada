@@ -386,7 +386,7 @@ st.sidebar.markdown("""
 </ul>
 """, unsafe_allow_html=True)
 
-st.title('Ada - Personal Assistant')
+st.title('Ada -Your Personal Assistant ☺️')
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
