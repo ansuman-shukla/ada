@@ -1,5 +1,8 @@
 # Ada - Your Personal Assistant
 
+
+#Hosted at :- https://adaislive.streamlit.app/
+
 Ada is an AI-powered personal assistant designed to streamline your daily life by helping you manage tasks, store and retrieve personal memories, and search the web for information. Built with a modern tech stack, Ada combines a user-friendly Streamlit interface with advanced natural language processing capabilities powered by the Gemini AI model.
 
 ## Features
